@@ -14,6 +14,8 @@ Array: [1, 2, 3, 4]
 */
 
 // Operators
+//Assignment
+let x = 15;
 // Arithmetic
 let sum = 5 + 3; // 8
 let product = 5 * 3; // 15
