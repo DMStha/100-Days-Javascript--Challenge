@@ -63,3 +63,28 @@ words.forEach((word) => {
 
 console.log(upperCaseWords);
 // Output: ["APPLE", "BANANA", "CHERRY"]
+
+// Write a JavaScript program using forEach to find the largest number in an array.
+const numbers = [12, 45, 67, 89, 23, 56, 99, 4];
+let maxNum = numbers[0];
+
+numbers.forEach((num) => {
+  if (num > maxNum) {
+    maxNum = num;
+  }
+});
+
+console.log("Maximum number:", maxNum);
+// Output: Maximum number: 99
+
+// Given an array of numbers, count the occurrences of each unique number using forEach.
+
+const numbers = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+const count = {};
+
+numbers.forEach((num) => {
+  count[num] = (count[num] || 0) + 1;
+});
+
+console.log(count);
+// Output: { '1': 1, '2': 2, '3': 3, '4': 4 }
