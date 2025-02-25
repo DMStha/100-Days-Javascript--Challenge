@@ -88,3 +88,32 @@ numbers.forEach((num) => {
 
 console.log(count);
 // Output: { '1': 1, '2': 2, '3': 3, '4': 4 }
+
+// Use forEach to create a new array that contains only unique values from an array.
+const numbers = [1, 2, 2, 3, 4, 4, 5];
+const uniqueNumbers = [];
+
+numbers.forEach((num) => {
+  if (!uniqueNumbers.includes(num)) {
+    uniqueNumbers.push(num);
+  }
+});
+
+console.log(uniqueNumbers);
+// Output: [1, 2, 3, 4, 5]
+
+// Given an array of product objects with name and price properties, use forEach to calculate the total price.
+const products = [
+  { name: "Laptop", price: 800 },
+  { name: "Phone", price: 500 },
+  { name: "Tablet", price: 300 },
+];
+
+let totalPrice = 0;
+
+products.forEach((product) => {
+  totalPrice += product.price;
+});
+
+console.log("Total Price:", totalPrice);
+// Output: Total Price: 1600
