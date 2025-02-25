@@ -119,7 +119,7 @@ console.log("Total Price:", totalPrice);
 // Output: Total Price: 1600
 
 // Use forEach to find the longest word in an array of strings
-const words = ["apple", "banana", "strawberry", "blueberry", "kiwi"];
+const words1 = ["apple", "banana", "strawberry", "blueberry", "kiwi"];
 let longestWord = "";
 
 words.forEach((word) => {
