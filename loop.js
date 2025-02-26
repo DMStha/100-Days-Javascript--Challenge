@@ -266,3 +266,16 @@ const flatten = (arr) => {
 flatten(nestedArray);
 console.log(flatArray);
 // Output: [1, 2, 3, 4, 5, 6, 7]
+
+// Given an array of numbers, find the missing numbers in the sequence.
+const numbers = [1, 2, 4, 6, 7, 9, 10];
+const missingNumbers = [];
+
+for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+  if (!numbers.includes(i)) {
+    missingNumbers.push(i);
+  }
+}
+
+console.log("Missing numbers:", missingNumbers);
+// Output: [3, 5, 8]
