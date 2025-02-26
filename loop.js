@@ -147,3 +147,18 @@ keyValuePairs.forEach((pair) => {
 
 console.log(resultObject);
 // Output: { name: 'Alice', age: 25, city: 'New York' }
+
+// Given two arrays, use forEach to find common elements between them.
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+const commonElements = [];
+
+array1.forEach((num) => {
+  if (array2.includes(num)) {
+    commonElements.push(num);
+  }
+});
+
+console.log("Common elements:", commonElements);
+// Output: [3, 4, 5]
