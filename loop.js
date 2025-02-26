@@ -278,4 +278,17 @@ for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
 }
 
 console.log("Missing numbers:", missingNumbers);
+
 // Output: [3, 5, 8]
+
+// Use forEach to convert an array of temperatures in Celsius to Fahrenheit.
+
+const celsiusTemps = [0, 10, 20, 30, 40];
+const fahrenheitTemps = [];
+
+celsiusTemps.forEach((temp) => {
+  fahrenheitTemps.push((temp * 9) / 5 + 32);
+});
+
+console.log(fahrenheitTemps);
+// Output: [32, 50, 68, 86, 104]
