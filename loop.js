@@ -247,3 +247,22 @@ users.forEach((user) => {
 console.log(formattedUsers);
 // Output:
 // ["John Doe is 25 years old.", "Jane Smith is 30 years old.", "Alice Brown is 22 years old."]
+
+// Write a function that flattens a nested array using forEach.
+
+const nestedArray = [1, [2, 3], [4, [5, 6]], 7];
+const flatArray = [];
+
+const flatten = (arr) => {
+  arr.forEach((item) => {
+    if (Array.isArray(item)) {
+      flatten(item);
+    } else {
+      flatArray.push(item);
+    }
+  });
+};
+
+flatten(nestedArray);
+console.log(flatArray);
+// Output: [1, 2, 3, 4, 5, 6, 7]
