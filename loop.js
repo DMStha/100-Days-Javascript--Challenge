@@ -162,3 +162,20 @@ array1.forEach((num) => {
 
 console.log("Common elements:", commonElements);
 // Output: [3, 4, 5]
+
+// Write a JavaScript program that counts the number of vowels (a, e, i, o, u) in a given sentence using forEach.
+
+const sentence = "JavaScript is amazing!";
+const vowels = "aeiouAEIOU";
+let vowelCount = 0;
+
+sentence.split("").forEach((char) => {
+  if (vowels.includes(char)) {
+    vowelCount++;
+  }
+});
+
+console.log("Number of vowels:", vowelCount);
+// Output: Number of vowels: 7
+
+// Use forEach to find the first repeating element in an array.
