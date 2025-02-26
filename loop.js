@@ -179,3 +179,17 @@ console.log("Number of vowels:", vowelCount);
 // Output: Number of vowels: 7
 
 // Use forEach to find the first repeating element in an array.
+
+const numbers = [3, 5, 2, 4, 5, 6, 7, 3];
+const seen = new Set();
+let firstRepeating = null;
+
+numbers.forEach((num) => {
+  if (seen.has(num) && firstRepeating === null) {
+    firstRepeating = num;
+  }
+  seen.add(num);
+});
+
+console.log("First repeating element:", firstRepeating);
+// Output: First repeating element: 5
