@@ -228,3 +228,22 @@ numbers.forEach((num) => {
 
 console.log("Most frequent element:", mostFrequent);
 // Output: Most frequent element: 4
+
+// Convert an array of user objects into an array of formatted strings using forEach.
+const users = [
+  { firstName: "John", lastName: "Doe", age: 25 },
+  { firstName: "Jane", lastName: "Smith", age: 30 },
+  { firstName: "Alice", lastName: "Brown", age: 22 },
+];
+
+const formattedUsers = [];
+
+users.forEach((user) => {
+  formattedUsers.push(
+    `${user.firstName} ${user.lastName} is ${user.age} years old.`
+  );
+});
+
+console.log(formattedUsers);
+// Output:
+// ["John Doe is 25 years old.", "Jane Smith is 30 years old.", "Alice Brown is 22 years old."]
