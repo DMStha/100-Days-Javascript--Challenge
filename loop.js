@@ -130,3 +130,20 @@ words.forEach((word) => {
 
 console.log("Longest word:", longestWord);
 // Output: Longest word: strawberry
+
+// Given an array of objects representing key-value pairs, use forEach to convert it into a single object.
+
+const keyValuePairs = [
+  { key: "name", value: "Alice" },
+  { key: "age", value: 25 },
+  { key: "city", value: "New York" },
+];
+
+const resultObject = {};
+
+keyValuePairs.forEach((pair) => {
+  resultObject[pair.key] = pair.value;
+});
+
+console.log(resultObject);
+// Output: { name: 'Alice', age: 25, city: 'New York' }
