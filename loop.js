@@ -211,3 +211,20 @@ console.log(sentence);
 
 
 */
+// Write a program that finds the most frequently occurring element using forEach.
+
+const numbers = [1, 3, 3, 4, 2, 1, 3, 4, 4, 4];
+const frequency = {};
+let mostFrequent = null;
+let maxCount = 0;
+
+numbers.forEach((num) => {
+  frequency[num] = (frequency[num] || 0) + 1;
+  if (frequency[num] > maxCount) {
+    maxCount = frequency[num];
+    mostFrequent = num;
+  }
+});
+
+console.log("Most frequent element:", mostFrequent);
+// Output: Most frequent element: 4
