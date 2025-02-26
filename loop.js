@@ -1,3 +1,4 @@
+/*
 // For Loop
 for (let i = 0; i < 5; i++) {
   console.log(i);
@@ -193,3 +194,20 @@ numbers.forEach((num) => {
 
 console.log("First repeating element:", firstRepeating);
 // Output: First repeating element: 5
+
+// Given an array of words, use forEach to join them into a sentence.
+const words = ["Learning", "JavaScript", "is", "fun"];
+let sentence = "";
+
+words.forEach((word, index) => {
+  sentence += word;
+  if (index < words.length - 1) {
+    sentence += " ";
+  }
+});
+
+console.log(sentence);
+// Output: "Learning JavaScript is fun"
+
+
+*/
