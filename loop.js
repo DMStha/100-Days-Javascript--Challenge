@@ -292,3 +292,19 @@ celsiusTemps.forEach((temp) => {
 
 console.log(fahrenheitTemps);
 // Output: [32, 50, 68, 86, 104]
+
+// Convert an array of user objects into an object where keys are user IDs and values are the user names.
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+];
+
+const userLookup = {};
+
+users.forEach((user) => {
+  userLookup[user.id] = user.name;
+});
+
+console.log(userLookup);
+// Output: { '1': 'Alice', '2': 'Bob', '3': 'Charlie' }
